@@ -15,9 +15,17 @@ fn main() {
     let _second = a[1];
 
     println!("Functions!");
-    second_function(5);
+    second_function(5, 5);
+
+    println!("Statements");
+    let _x = 5;
+    let _y = {
+        let x =3;
+        x + 1
+    };
 }
 
-fn second_function(x: i32) {
-    println!("The value of x is {}", x)
+fn second_function(x: i32, y: i32) {
+    println!("The value of x is {}", x);
+    println!("The value of y is {}", y);
 }
